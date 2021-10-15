@@ -1,3 +1,8 @@
+# image credit
+
+American flag banner: https://unsplash.com/photos/QsX23A3NgMQ
+Logo: canva.com
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
