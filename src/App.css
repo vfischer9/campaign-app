@@ -64,7 +64,7 @@ hr.solid2 {
   color: white;
   margin: auto;
   margin-top: 50px;
-  width: 50%;
+  width: 70%;
   padding: 10px;
 }
 
@@ -159,6 +159,30 @@ hr.solid2 {
   font-size: 16px;
   padding: 16px 32px;
 }
+
+.ian, .fred{
+  max-height: 20rem;
+}
+
+.arbitration{
+  width: 30rem;
+}
+
+.right{
+  text-align: right;
+  margin-right: 10rem;
+}
+
+.left{
+  text-align: left;
+  margin-left: 10rem;
+}
+
+.numbers{
+  text-align: start;
+  margin: 10px;
+}
+
 
 
 
