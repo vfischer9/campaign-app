@@ -5,7 +5,8 @@
 }
 
 .App{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
 }
 
 .navb2{
@@ -44,13 +45,12 @@ hr.solid2 {
 }
 
 .hero-image{
-  margin-top: 2rem;
-  height: 35rem;
+  height: 40rem;
   width: 100%;
+  z-index: 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 
 .title{
@@ -58,7 +58,7 @@ hr.solid2 {
   color: #63B4CB;
 }
 
-#about, #issues, #candidates{
+#about, #arbitration, #vp{
   text-align: center;
   background-color: #3a5796;
   color: white;
@@ -68,12 +68,140 @@ hr.solid2 {
   padding: 10px;
 }
 
-.candidate{
-  margin-top: 40px;
-}
 
 .profile{
   height: 100x;
   width: 100px;
   margin: 0 auto;
 }
+
+.bullets{
+  text-align: start;
+}
+
+.contain {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background-color: rgba(58, 87, 150, 0.7);
+  padding: 40px;
+  font-weight: 500;
+}
+
+.container{
+  margin-top: 30px;
+}
+
+.card{
+  background-color: #3a5796 !important;
+  margin: 10px;
+  text-align: center;
+  color: white;
+  border: 2px solid #3a5796 !important;
+}
+
+.award{
+  max-height: 18rem;
+}
+
+.proclamation {
+  margin: 0 auto;
+  margin-top: 30px;
+  position: relative;
+  width: 40rem;
+  border: 1px solid blue;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 40rem;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  height: 50rem;
+  margin: 0 auto;
+  border: 8px solid #3a5796;
+  
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.proclamation:hover .image {
+  opacity: 0.5;
+}
+
+.proclamation:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #3a5796;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+
+@media (max-width:1440px) { /*screen size smaller than 1440px  */
+   .centered{
+     width: 75%;
+     padding: 25px;
+   }
+} 
+
+@media (max-width:768px) { /*screen size smaller than 768px  */
+  .hero-image{
+    height: 25rem;
+  }
+
+  .centered{
+    font-size: 12px;
+    width: 80%;
+    padding: 20px;
+  }
+} 
+
+
+@media (max-width:425px) { /*screen size smaller than 425px  */
+  .hero-image{
+    height: 25rem;
+  }
+  
+  .centered{
+    font-size: 10px;
+    width: 75%;
+    padding: 20px;
+  }
+} 
+
+@media (max-width:375px) { /*screen size smaller than 375px  */
+  .hero-image{
+    height: 25rem;
+  }
+  
+  .centered{
+    font-size: 9px;
+    width: 75%;
+    padding: 15px;
+  }
+} 
