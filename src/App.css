@@ -68,9 +68,24 @@ hr.solid2 {
   padding: 10px;
 }
 
+.panel{
+  margin: auto;
+  height: 100vh;
+  width: 100%;
+}
+
+.panelPoints{
+  text-align: center;
+  background-color: #3a5796;
+  color: white;
+  margin: auto;
+  margin-top: 10px;
+  width: 70%;
+  padding: 10px;
+}
 
 .profile{
-  height: 100x;
+  height: 100px;
   width: 100px;
   margin: 0 auto;
 }
@@ -178,12 +193,25 @@ hr.solid2 {
   margin-left: 10rem;
 }
 
+.center{
+  text-align: center;
+}
+
 .numbers{
   text-align: start;
   margin: 10px;
 }
 
 
+
+/* .homeButton{
+  margin: 5px;
+  border: 1px solid black;
+  padding: 4px;
+  color: black;
+  display: inline-block;
+  background-color: rgb(218, 218, 218);
+} */
 
 
 @media (max-width:1440px) { /*screen size smaller than 1440px  */

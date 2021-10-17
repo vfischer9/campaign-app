@@ -10,8 +10,10 @@ import proclamation from '../images/proclomation.JPG';
 import fred from '../images/fred.JPG';
 import ian from '../images/ian.jpg';
 import arbitration from '../images/arbitration.jpeg';
+import {Link} from "react-router-dom";
 
 function Home() {
+
     return (
         <div id='home'>
             <Navbar collapseOnSelect expand="lg" variant="dark" className='navb'>
@@ -42,7 +44,7 @@ function Home() {
                                         } id="collasible-nav-dropdown">
                                 <NavDropdown.Item style={{color:"#3a5796"}} href="#action/3.2">Ian</NavDropdown.Item>
                             </NavDropdown> */}
-                            <Nav.Link className='navb2' style={{color:"#3a5796"}} href="#details">MORE DETAILS</Nav.Link>
+                            <Nav.Link className='navb2' style={{color:"#3a5796"}} href="#panel">ARBITRATION PANEL</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
@@ -51,18 +53,16 @@ function Home() {
             <div class="contain">
                 <img className="hero-image" src={hero}></img>
                 <div className='centered'>
-                    <p>"As we come to the close of 2021, it is more important than ever that our Local Union requires
+                    <p>
+                    "As we come to the close of 2021, it is more important than ever that our Local Union requires
                     experienced leadership that is both dedicated and committed to all our members and crafts.
                     As I have served the Local as shop steward, clerk craft director, and Local President since 2004,
                     I believe now is the time to not only tell the members who has betrayed them, but for the first
-                    time, I am going to provide the <u><b>proof</b></u> to you that you deserve.
-                    At the close of my 2 terms in 2009, the Local Union had many grievances still in the system
+                    time, I am going to provide the <u><b>proof</b></u> to you that you deserve. At the close of my 2 terms in 2009, the Local Union had many grievances still in the system
                     pending arbitration, for all crafts, clerks, maintenance and motor vehicle services. Most notable
                     was a non-compliance grievance in the VMF which had to do with staffing, towing and
-                    monetary compensation for the VMF. Gerry Ghiraldi traded all these grievances for personal
-                    gain. I am providing the settlement he signed as well as the arbitration that went on in 2011.
-                    On January 12, 2010, then-President Gerry Ghiraldi signed a settlement for grievance ending in
-                    6097 for no money. Why you ask? For his personal gain." -Fred Fischer
+                    monetary compensation for the VMF. Gerry Ghiraldi traded all these grievances. Why you ask? For his own personal gain. I am providing the settlement he signed as well as the arbitration that went on in 2011.
+                    " -Fred Fischer
                     </p>
                 </div>
             </div>
@@ -75,7 +75,12 @@ function Home() {
                 <img className='fred' src={fred} alt='Fred C Fischer'></img>
                 <br></br><br></br>
                 <p>
-                    Fred has exceptional leadership experience within the American Postal Workers Union. <br></br><br></br>
+                    <p><i>
+                    "I am running for Local President along with Ian Fisher for Executive Vice President. I have almost
+                    20 years experience as Union rep for our local, most of those years as the Local President. Here is just
+                    a small list of my many accomplishments, from 12 years ago, and I've served an additional 2 terms as President
+                    since then." - Fred Fischer 
+                    </i></p>
                     During his presidency from 2004-2006, Fred had accomplished: 
                     <ul className='bullets'>
                         <li>Negotiated the RI-399 agreement and Staten Island General Principles in 2004, in which the APWU continues to retain the lions share of work on Staten Island.</li>
@@ -102,6 +107,7 @@ function Home() {
                         <li>On April 30th, 2009, Fred was honored by the North Shore Democratic Club and received the 2009 <b>Labor Leader of the Year Award</b>.</li>
                         <li>Fred is a Certified National APWU Arbitration Advocate.</li>
                     </ul>
+                    On top of these accomplishments, Fred has continued to serve as Local President for <b>two additional terms.</b>
                 </p>
             </div>
             
@@ -166,7 +172,26 @@ function Home() {
                             <hr class="solid2"></hr>
                             <img className='ian' src={ian} alt='Ian Fisher'></img>
                             <br /><br />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed pretium dui. Etiam sed mauris laoreet, tincidunt dui at, viverra tortor. Etiam lacinia, nisl quis sollicitudin euismod, erat lacus rhoncus risus, ut consectetur ipsum mauris sed lorem. Fusce pharetra ornare velit sit amet aliquet. Duis in placerat mauris, sit amet blandit metus. Aliquam volutpat neque ac nunc posuere dictum. Curabitur porta efficitur mauris, quis mollis tellus malesuada vitae. Suspendisse nec dolor non odio ultricies aliquet luctus id quam. Curabitur imperdiet pulvinar nibh. Proin nec felis finibus, cursus justo nec, bibendum ex. Vivamus risus erat, finibus ac viverra in, consectetur et massa. Mauris augue diam, tempus eget dolor et, aliquet cursus nisi. Ut condimentum cursus dictum. Praesent dictum condimentum tempor. In luctus interdum est ut interdum. Curabitur enim justo, sagittis ac hendrerit sed, condimentum in arcu. Etiam vel vehicula quam. Nunc nec eleifend orci. Vivamus et odio hendrerit, egestas magna molestie, luctus tellus. Aenean placerat luctus mi sit amet vulputate. Cras malesuada bibendum neque, sed interdum purus faucibus nec. Maecenas venenatis leo at nisi malesuada tempus. Duis fermentum tortor erat, eget lacinia elit gravida eu. Nullam sagittis nibh lacus, quis ullamcorper urna auctor bibendum.</p>
+                            <p>
+                                <i>
+                                "I have been with the postal service for several years. I've found that you can make a difference in the
+                                way you're viewed by customers and co-workers. Hard works is nothing new to postal workers, and as the Union Vice President, 
+                                I would first listen to what my co-worker's problems are and make the very best effort to correct and solve
+                                the problem permanently the first time. 
+                                <b> There are no big I's or little you's</b>. We are all postal workers equally important. 
+                                Given the opportunity, I will fight for postal workers and the rights that they deserve and work so hard for.
+                                Thank you for your vote and consideration."</i> -Ian Fisher
+                                
+                            </p>
+
+                            <p className='bullets'>
+                                Ian Fisher has shown a genuine interest in the union and has attended most meetings for years now. His opponent, Gerry
+                                Ghiraldi, has been to maybe <i>one</i> meeting in the last <i>six</i> years. Gerry clearly has no interest.
+                                Ian Fisher is slowly but surely moving his way up the clerk seniority list, however, he still many years until
+                                he retires from the USPS. His opponent, Gerry Ghiraldi, has told most of us he will be retiring in 9 or 10 months. There terms
+                                of office are for 3 years! Sure, he will tell you he will stick around and pay his full dues as a retiree to be an officer. Do you
+                                know of <i>any</i> retiree, board member or not, who still pays full dues? Gerry will tell you he will be the exception.
+                            </p>
                         </div>
             </div>
 
@@ -178,7 +203,7 @@ function Home() {
             <div id='arbitration'>
                 <h3 className='title'>GHIRALDI SETTLEMENT</h3>
                 <hr class="solid2"></hr>
-                <p>On January 12, 2070, then-President Gerry Ghiraldi signed a settlement for grievance 
+                <p>On January 12, 2010, then-President Gerry Ghiraldi signed a settlement for grievance 
                     ending in 6097 for <b>no money</b>.</p>
                 <br />
                 <p className='left'>
@@ -220,20 +245,65 @@ function Home() {
                 </p>
 
                 <br />
-                <hr class="solid2"></hr>
-                <br />
 
                 <div className='numbers'>
-                    On top of the selfish settlement Gerald Ghiraldi signed, 
+                    <p className='center'>On top of the selfish settlement Gerald Ghiraldi signed, proof of the arbitration that went on in 2011 is provided below.
+                    Click <Link to="/pdf" target='_blank'>here</Link> for the full documentation.</p>
                 </div>
+                
+                <br />
+                <div id='panel'>
+                    <h3 className='title'>ARBITRATION PANEL</h3>
+                    <hr class="solid2"></hr>
+                    <div className='panelPoints'>
+                        <p>Some of the most notable points to take away from the Arbitration Panel include but are not limited to:</p>
+                        <p className='numbers'>1. Page 6 of arbitration decision ending in 6097, line 7, the advocate for USPS states that the
+                        newly elected Local President (Gerald) signed the settlement and that it is what it is.</p>
+                        <p className='numbers'>2. Page 7 line 12, The USPS advocate further notes that the newly elected President (Gerald)
+                        secured other settlements and the USPS advocate testified that is was the Local Union
+                        President (Gerald) who approached her <b>to get his friend back to work who has been removed.</b></p>
+                        <p className='numbers'>3. Page 7, line 18, The USPS advocate states the APWU advocate says these grievances are worth
+                        a lot of money and the newly elected <b>President (Gerald) did not have the authority</b> to resolve
+                        this grievance</p>
+                        <p className='numbers'>4. Page 8 line 1, The USPS advocate notes at least 1, possibly 2 employees were bought back
+                        from removals by the settlement.</p>
+                        <p className='numbers'>5. Page 9, line 9, the APWU advocate states an <b>improper and unauthorized</b> settlement was
+                        entered into by the newly elected President (Gerald)</p>
+                        <p className='numbers'>6. Page 16, line 12, The witness (Gerald) noted that paragraph 3 of the January 12 2010 settlement
+                        that he entered into provided that the union would agree to withdraw their most recent
+                        grievance ending in 9473 Dated December 2009 in view of the fact the non-compliance issue
+                        has been resolved.</p>
+                        <p className='numbers'>7. Page 17, line 9, The USPS advocate approached him (Gerald) and said they had 40 to 50 more
+                        grievances to get rid of.</p>
+                        <p className='numbers'>8. Page 17, line 14, The witness (Gerald) testified they agreed to meet on January 12, 2010 and on
+                        that date everything on the settlement was negotiated typed and signed.</p>
+                        <p className='numbers'>9. Page 19, line 1, He (Gerald) testified that Maintenance Craft National Business Agent Rick Logan
+                        called him and was <b>not pleased with what he did</b>. The witness (Gerald) testified that the
+                        Postmaster gave him an employee back who had been removed.</p>
+                        <p className='numbers'>10. Page 19, line 13, The witness (Gerald) testified that on January 12, 2010 the USPS advocate
+                        asked what he wanted and raised the issue of Brescia who was removed.</p>
+                        <p className='numbers'>11. Page 23, line 1, The USPS witness testified that Former President Fischer had put in a non-
+                        compliance and that paragraph 3 of Gerry's January 12 settlement resolved the non-compliance grievance.</p>
+                        <p className='numbers'>12. Page 23, line 18, the USPS advocate testified that the new Local President (Gerald) told her that
+                        MVS business agent LaCapria yelled at him (Gerald) for an hour and LaCapria said he (Gerald)
+                        got bamboozled.</p>
+                        <p className='numbers'>13. Page 31, line 8, the newly elected <b>President (Gerald) was clearly over his head and out of
+                        his league.</b></p>
+                        <p className='numbers'>14. Page 33, line 5 The Arbitrator refers to Gerald as a "schlep".</p>
+                        <p className='numbers'>15. Page 35, line 5, The Arbitrator notes that at the hearing before him, the union additionally
+                        sought forty (40) hours of pay for each position provided pursuant to the April 16, 2008 pre-arb settlement. This monetary remedy sought by the union, conspicuously left out of the January
+                        12, 2010 imposed settlement, is rejected herein.</p>
+                        <Link to="/pdf" target='_blank'><button> View the entire arbitration panel documentation  </button></Link>
+                    </div>
+                </div>
+
+
+
             </div>
 
        
 
-           
-
-
-
+    
     <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 
         </div>
