@@ -11,6 +11,7 @@ import fred from '../images/fred.JPG';
 import ian from '../images/ian.jpg';
 import arbitration from '../images/arbitration.jpeg';
 import {Link} from "react-router-dom";
+import campaignGif from '../images/campaign.gif';
 
 function Home() {
 
@@ -239,17 +240,13 @@ function Home() {
                 <p>Signed Gerald Ghiraldi - 1/12/10</p>
                 <img className='arbitration' src={arbitration} alt='Grievance Settlement'></img>
                 <br /><br />
-                <p className='numbers'><b>The settlement that Gerald Ghiraldi willingly signed for grievance ending in 6097 was for personal gain. 
-                    With this settlement, it is clear that Gerald Ghiraldi does not hesitate to betray the membeers of our Union
+                <p><b>The settlement that Gerald Ghiraldi willingly signed for grievance ending in 6097 was for personal gain. 
+                    With this settlement, it is clear that Gerald Ghiraldi does not hesitate to betray members of our Union
                     for his own self-interest. </b>
+                    On top of the selfish settlement Gerald Ghiraldi signed, proof of the arbitration that went on in 2011 is provided below.
+                    <br />
+                    <b>Click <Link style={{color: 'white'}} to="/pdf" target='_blank'>here</Link> for the full documentation.</b>
                 </p>
-
-                <br />
-
-                <div className='numbers'>
-                    <p className='center'>On top of the selfish settlement Gerald Ghiraldi signed, proof of the arbitration that went on in 2011 is provided below.
-                    Click <Link to="/pdf" target='_blank'>here</Link> for the full documentation.</p>
-                </div>
                 
                 <br />
                 <div id='panel'>
@@ -293,8 +290,9 @@ function Home() {
                         <p className='numbers'>15. Page 35, line 5, The Arbitrator notes that at the hearing before him, the union additionally
                         sought forty (40) hours of pay for each position provided pursuant to the April 16, 2008 pre-arb settlement. This monetary remedy sought by the union, conspicuously left out of the January
                         12, 2010 imposed settlement, is rejected herein.</p>
-                        <Link to="/pdf" target='_blank'><button> View the entire arbitration panel documentation  </button></Link>
+                        <Link to="/pdf" target='_blank'><button> View the entire Arbitration Panel</button></Link>
                     </div>
+                    <img src={campaignGif} className='gif' alt='campaign gif'></img>
                 </div>
 
 
