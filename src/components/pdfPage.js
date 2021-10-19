@@ -10,6 +10,13 @@ function pdfPage() {
             <div>
                 <object data={arbpdf} className='panel' type="application/pdf">
                 </object>
+
+                <object data={arbpdf} className='panel' type="application/pdf"> 
+                <p>It appears you don't have a PDF plugin for this browser.
+                No biggie... you can <a href={arbpdf}>click here to
+                download the PDF file.</a></p>  
+                </object>
+
             </div> 
                  
         </div>

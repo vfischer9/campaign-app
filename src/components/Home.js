@@ -12,6 +12,7 @@ import ian from '../images/ian.jpg';
 import arbitration from '../images/arbitration.jpeg';
 import {Link} from "react-router-dom";
 import campaignGif from '../images/campaign.gif';
+import 'animate.css';
 
 function Home() {
 
@@ -19,7 +20,7 @@ function Home() {
         <div id='home'>
             <Navbar collapseOnSelect expand="lg" variant="dark" className='navb'>
                 <Container>
-                    <Navbar.Brand href="#home">Campaign Site</Navbar.Brand>
+                    <Navbar.Brand href="#home">Leadership Team 2022</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
@@ -53,7 +54,7 @@ function Home() {
 
             <div class="contain">
                 <img className="hero-image" src={hero}></img>
-                <div className='centered'>
+                <div className='centered topText'>
                     <p>
                     "As we come to the close of 2021, it is more important than ever that our Local Union requires
                     experienced leadership that is both dedicated and committed to all our members and crafts.
@@ -192,6 +193,19 @@ function Home() {
                         <div class="middle">
                             <div class="text">Fred's Proclamation - Awarded April 30, 2009</div>
                         </div>
+            </div>
+
+            <div className='endorsement'>
+            "With the Postal Service being attacked on all fronts, from Washington to the local level, the 
+            Staten Island APWU Local needs someone that shows the leadership, knowledge and experience to 
+            handle the challenges facing the membership ahead. I know Fred Fischer is the person for such 
+            job. That is why I endorse Fred Fischer to continue his role as President of local 231. As a 
+            former clerk steward and Maintenance Craft Director of 18 years, I served under Fred Fischer 
+            for 12 years and can attest that Fred Fischer has the knowledge, experience and leadership 
+            the other candidate lacks to continue as President of Local 231. Vote for Fred Fischer in 
+            this election year"
+            -Bruce Marshall
+
             </div>
 
             <hr class="solid"></hr>

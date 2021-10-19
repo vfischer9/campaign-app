@@ -21,6 +21,12 @@
   font-weight: bolder;
 }
 
+.navb2:hover{
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
 hr.solid {
   margin: auto;
   border-top: 3px solid rgb(151, 151, 151);
@@ -39,14 +45,12 @@ hr.solid2 {
 }
 
 .logo {
-  height: 175px;
-  width: 225px;
-  margin: 0 auto;
-  display: block;
+  width: 20%;
   position: absolute;
-  left: calc((100% - 195px) / 2);
-  z-index: 100000;
-  margin-top: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 1.5rem;
 }
 
 .hero-image{
@@ -63,6 +67,11 @@ hr.solid2 {
   color: #63B4CB;
 }
 
+.topText{
+  animation: zoomInDown; /*  referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+}
+
 #about, #arbitration, #vp{
   text-align: center;
   background-color: #3a5796;
@@ -71,6 +80,19 @@ hr.solid2 {
   margin-top: 50px;
   width: 70%;
   padding: 10px;
+}
+
+.endorsement{
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+  background-color: #3a5796;
+  color: white;
+  margin: auto;
+  margin-top: 50px;
+  width: 70%;
+  padding: 20px;
+  border-radius: 10rem;
 }
 
 .panel{
@@ -142,17 +164,17 @@ hr.solid2 {
   margin: 0 auto;
   margin-top: 30px;
   position: relative;
-  width: 40rem;
+  width: 30rem;
   border: 1px solid blue;
 }
 
 .image {
   opacity: 1;
   display: block;
-  width: 40rem;
+  width: 30rem;
   transition: .5s ease;
   backface-visibility: hidden;
-  height: 50rem;
+  height: 40rem;
   margin: 0 auto;
   border: 8px solid #3a5796;
   
@@ -253,6 +275,21 @@ hr.solid2 {
     margin: 0;
   } 
 
+  .endorsement{
+    font-size: 18px;
+    width: 90%;
+    padding: 30px;
+  }
+
+  .logo {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 2rem;
+  }
+
 } 
 
 @media (max-width:1024px) { /*screen size smaller than 1024px  */
@@ -289,6 +326,22 @@ hr.solid2 {
     text-align: left;
     margin: 0;
   } 
+
+  .endorsement{
+    font-size: 16px;
+    width: 90%;
+    padding: 30px;
+  }
+
+  .logo {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 1rem;
+  }
+  
 }
 
 @media (max-width:768px) { /*screen size smaller than 768px  */
@@ -349,6 +402,12 @@ hr.solid2 {
     margin-top: 10px;
     width: 90%;
     padding: 10px;
+  }
+
+  .endorsement{
+    font-size: 15px;
+    width: 90%;
+    padding: 40px;
   }
   
 } 
@@ -444,6 +503,13 @@ hr.solid2 {
     width: 85%;
     padding: 10px;
   }
+
+  .endorsement{
+    font-size: 12px;
+    width: 100%;
+    padding: 40px;
+  }
+  
 } 
 
 @media (max-width:375px) { /*screen size smaller than 375px  */
@@ -528,6 +594,12 @@ hr.solid2 {
     height: 12vh;
   }
 
+  .endorsement{
+    font-size: 12px;
+    width: 100%;
+    padding: 40px;
+  }
+
 } 
 
 @media (max-width:320px) { /*screen size smaller than 320px  */
@@ -603,4 +675,11 @@ hr.solid2 {
   #about, #arbitration, #vp, .container, .text{
     font-size: 12px;
   }
+
+  .endorsement{
+    font-size: 9px;
+    width: 90%;
+    padding: 40px;
+  }
+
 } 
