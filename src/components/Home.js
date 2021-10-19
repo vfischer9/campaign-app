@@ -75,6 +75,7 @@ function Home() {
                 <hr class="solid2"></hr>
                 <img className='fred' src={fred} alt='Fred C Fischer'></img>
                 <br></br><br></br>
+                <div className='body'>
                 <p>
                     <p><i>
                     "I am running for Local President along with Ian Fisher for Executive Vice President. I have almost
@@ -82,23 +83,48 @@ function Home() {
                     a small list of my many accomplishments, from 12 years ago, and I've served an additional 2 terms as President
                     since then." - Fred Fischer 
                     </i></p>
-                    During his presidency from 2004-2006, Fred had accomplished: 
+
+                    <p className='bullets'>Eileen George and Gerald Ghiraldi are running together- zero experience and unethical deals are
+                        not in your best interest. Eileen George currently struggles at the base shop steward level, and has limited
+                        experience outside of the basic step 1 grievance. Fred, however, has 20 years union experience, most of which as Local
+                        President. With 2022 quickly approaching, we will face more challenges as our contract is expired, our local agreement 
+                        will need to be negotiated if management chooses. We have a new Postmaster. We have new officers on our executive
+                        board. As a Local President, there is no substitute for experience. There is training available for stewards, treasurers,
+                        craft specific training, but there is nothing to prepare someone for the position of president and leadership. 
+                        <br /> <br />
+                        "I believe sometimes change is needed, but I also recognize that it should be change for the better if someone is not doing 
+                        a good job. It should never be for personal reasons, which is a south shore annex rerun over and over again." 
+                        </p>
+                        <p className='bullets'>
+                        Eileen has zero experience, and Gerry has squashed grievances for his own personal gain, which is <i>highly </i> unethical.
+                        If memory serves correct, John Braccia was elected President, not Gerry. Yet he still settled grievances which were pending arbitration 
+                        and signed the settlement as Local President. 
+                        <br /><br />
+                        "Your grievances, under my leadership, are always considered important, safe, and never
+                        used as a bargaining chip to make my personal life better. As always, I would like to thank you for your support. It has been an honor
+                        to serve you. I look forward to the future, and with the right people in office, our future is indeed bright." -Fred Fischer
+                        </p>
+
+                        <hr className='solid2'></hr>
+
+
+                    During Fred's presidency from 2004-2006, he has accomplished: 
                     <ul className='bullets'>
                         <li>Negotiated the RI-399 agreement and Staten Island General Principles in 2004, in which the APWU continues to retain the lions share of work on Staten Island.</li>
                         <li>Received APWU training for OWCP, FMLA, Article 12 excessing issues, Function 4 impact, Advanced stewards training, RI-399, NP (National Reasessment Program), Secretary-Treasurer, Labor Law, Parliamentary procedure, Leadership, JCIM, Craft specific training for all crafts as well as Arbitration- which are all necessary to run a Local Union.</li>
                         <li>Eliminated past "stations as needed" on all bids and the "Islandwide Overtime List", as well as drivers working automation.</li>
                         <li>An Arbitration settlement was paid to the MVS Craft in 2006 totaling $27,000, and Fred had negotiated the NLRB settlement against the USPS for $85,000, which was paid in 2006.</li>
                     </ul>
-                    During his presidency from 2007-2009, Fred had accomplished:
+                    During Fred's presidency from 2007-2009, he has accomplished:
                     <ul className='bullets'>
-                        <li>Re-Signing of our Local Memorandum ofUnderstanding (LMOU).</li>
+                        <li>Re-Signing of our Local Memorandum of Understanding (LMOU).</li>
                         <li>Served on the National Presidents Conference election committee in 2007.</li>
                         <li>Met with your elected officials in Washington D.C. to discuss our concerns in 2007 and 2009.</li>
                         <li>Attended the All-Craft conference in 2007 and 2009 while receiving the <b>Presidents Award</b> in 2007.</li>
                         <li>Served on the New York State Constitution Committee in 2006 and 2008 during the New York State Conventions.</li>
                         <li>In April, 2008 our Local Union became affiliated with the largest State Federation in the Country, the New York State AFL-CIO, having our Local fully affiliated at the Local, State and Federal levels of the AFL-CIO.</li>
                         <li>Represented the members at three consecutive National APWU Conventions, which is the highest ranking body of the APWU.</li>
-                        <li>In July 2008, assisted in negotiating a settlement agreement for the VMF to include an upgrade for mechanics, posting two additional mechanics positions and payment of over $25,000</li>
+                        <li>In July 2008, assisted in negotiating a settlement agreement for the VMF to include an upgrade for mechanics, posting two additional mechanics positions and payment of over $25,000.</li>
                         <li>Took part in the MS-47 settlement- which awarded all custodians lump sum payments of $2,700 each which totaled over $37,000 for Staten Island custodians.</li>
                         <li>Met the Local's COPA goals in 2006, 2007 and 2008.</li>
                         <li>In October 2008, an Arbitration decision that awarded over $5,000 to Main Office Window clerks.</li>
@@ -110,11 +136,14 @@ function Home() {
                     </ul>
                     On top of these accomplishments, Fred has continued to serve as Local President for <b>two additional terms.</b>
                 </p>
+                </div>
             </div>
+
+            <hr class="solid"></hr>
             
             <div className='container'>
-                <CardGroup>
-                <Card style={{ width: '18rem' }}>
+                <div className='card-group'>
+                <div style={{ width: '18rem' }} className='card'>
                         <Card.Img variant="top" src={training} alt="training certificate" className='award' />
                         <Card.Body>
                             <Card.Title className='title'>Basic Arbitration Training Certificate</Card.Title>
@@ -125,9 +154,9 @@ function Home() {
                                 Fred Fischer for successfully completing BASIC ARBITRARY TRAINING 2009".</i>
                             </Card.Text>
                         </Card.Body>
-                    </Card>
+                    </div>
                
-                    <Card style={{ width: '18rem' }}>
+                    <div style={{ width: '18rem' }} className='card'>
                         <Card.Img variant="top" src={labor} alt="labor leader certificate" className='award' />
                         <Card.Body>
                             <Card.Title className='title'>Certificate of Recognition</Card.Title>
@@ -141,9 +170,9 @@ function Home() {
                             48th Annual Dinner, being held at LiGreci's Staaten, Staten Island."</i>
                             </Card.Text>
                         </Card.Body>
-                    </Card>
+                    </div>
 
-                    <Card style={{ width: '18rem' }}>
+                    <div style={{ width: '18rem' }} className='card'>
                         <Card.Img variant="top" src={service} alt="service certificate" className='award' />
                         <Card.Body>
                             <Card.Title className='title'>Special Congressional Recognition</Card.Title>
@@ -153,13 +182,13 @@ function Home() {
                             <i>"Presented to Fred Fischer in recognition of outstanding and invaluable service to the community." </i>
                             </Card.Text>
                         </Card.Body>
-                    </Card>
-                    </CardGroup>
+                    </div>
+                    </div>
             </div>
             
 
-            <div class="proclamation">
-                        <img src={proclamation} alt="Avatar" class="image" />
+            <div className="proclamation">
+                        <img src={proclamation} alt="Avatar" className="image" />
                         <div class="middle">
                             <div class="text">Fred's Proclamation - Awarded April 30, 2009</div>
                         </div>
@@ -173,26 +202,30 @@ function Home() {
                             <hr class="solid2"></hr>
                             <img className='ian' src={ian} alt='Ian Fisher'></img>
                             <br /><br />
+                            <div className='body'>
                             <p>
-                                <i>
                                 "I have been with the postal service for several years. I've found that you can make a difference in the
                                 way you're viewed by customers and co-workers. Hard works is nothing new to postal workers, and as the Union Vice President, 
                                 I would first listen to what my co-worker's problems are and make the very best effort to correct and solve
                                 the problem permanently the first time. 
                                 <b> There are no big I's or little you's</b>. We are all postal workers equally important. 
                                 Given the opportunity, I will fight for postal workers and the rights that they deserve and work so hard for.
-                                Thank you for your vote and consideration."</i> -Ian Fisher
+                                <p>Thank you for your vote and consideration." -Ian Fisher</p>
                                 
                             </p>
 
                             <p className='bullets'>
                                 Ian Fisher has shown a genuine interest in the union and has attended most meetings for years now. His opponent, Gerry
-                                Ghiraldi, has been to maybe <i>one</i> meeting in the last <i>six</i> years. Gerry clearly has no interest.
+                                Ghiraldi, has been to maybe <i>one</i> meeting in the last <i>six</i> years. 
+                                <br />
+                                <br />
+                                Gerry clearly has no interest.
                                 Ian Fisher is slowly but surely moving his way up the clerk seniority list, however, he still many years until
                                 he retires from the USPS. His opponent, Gerry Ghiraldi, has told most of us he will be retiring in 9 or 10 months. There terms
                                 of office are for 3 years! Sure, he will tell you he will stick around and pay his full dues as a retiree to be an officer. Do you
                                 know of <i>any</i> retiree, board member or not, who still pays full dues? Gerry will tell you he will be the exception.
                             </p>
+                            </div>
                         </div>
             </div>
 
@@ -204,6 +237,7 @@ function Home() {
             <div id='arbitration'>
                 <h3 className='title'>GHIRALDI SETTLEMENT</h3>
                 <hr class="solid2"></hr>
+                <div className='body'>
                 <p>On January 12, 2010, then-President Gerry Ghiraldi signed a settlement for grievance 
                     ending in 6097 for <b>no money</b>.</p>
                 <br />
@@ -238,9 +272,10 @@ function Home() {
                     December 2009, in view of the fact that the non-compliance issue has been resolved.</i></p>
                 <p className='numbers'><i>4. By signature of your representative, the above settlement is accepted. "</i></p>
                 <p>Signed Gerald Ghiraldi - 1/12/10</p>
+                </div>
                 <img className='arbitration' src={arbitration} alt='Grievance Settlement'></img>
                 <br /><br />
-                <p><b>The settlement that Gerald Ghiraldi willingly signed for grievance ending in 6097 was for personal gain. 
+                <p className='body'><b>The settlement that Gerald Ghiraldi willingly signed for grievance ending in 6097 was for personal gain. 
                     With this settlement, it is clear that Gerald Ghiraldi does not hesitate to betray members of our Union
                     for his own self-interest. </b>
                     On top of the selfish settlement Gerald Ghiraldi signed, proof of the arbitration that went on in 2011 is provided below.
@@ -292,17 +327,15 @@ function Home() {
                         12, 2010 imposed settlement, is rejected herein.</p>
                         <Link to="/pdf" target='_blank'><button> View the entire Arbitration Panel</button></Link>
                     </div>
-                    <img src={campaignGif} className='gif' alt='campaign gif'></img>
+                    
                 </div>
-
-
 
             </div>
 
-       
+            <img src={campaignGif} className='gif' alt='campaign gif'></img>
 
     
-    <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+    <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 
         </div>
     )

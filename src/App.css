@@ -4,6 +4,11 @@
   border-bottom: solid #3a5796;
 }
 
+.body{
+  width: 80%;
+  margin: 0 auto;
+}
+
 .App{
   font-family: 'Raleway', sans-serif;
   /* font-family: 'Poppins', sans-serif; */
@@ -113,6 +118,10 @@ hr.solid2 {
   font-weight: 500;
 }
 
+.center{
+  text-align: center;
+}
+
 .container{
   margin-top: 30px;
 }
@@ -204,17 +213,9 @@ hr.solid2 {
 
 .gif{
   height: 35vh;
+  margin: 0 auto;
+  display: block;
 }
-
-
-/* .homeButton{
-  margin: 5px;
-  border: 1px solid black;
-  padding: 4px;
-  color: black;
-  display: inline-block;
-  background-color: rgb(218, 218, 218);
-} */
 
 
 @media (max-width:1440px) { /*screen size smaller than 1440px  */
@@ -222,7 +223,73 @@ hr.solid2 {
      width: 75%;
      padding: 25px;
    }
+
+   .proclamation {
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+    width: 30rem;
+    border: 1px solid blue;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 30rem;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    height: 40rem;
+    margin: 0 auto;
+    border: 8px solid #3a5796;
+  }
+
+  .right{
+    text-align: right;
+    margin: 0;
+  }
+  
+  .left{
+    text-align: left;
+    margin: 0;
+  } 
+
 } 
+
+@media (max-width:1024px) { /*screen size smaller than 1024px  */
+  .centered{
+    width: 75%;
+    padding: 25px;
+  }
+
+  .proclamation {
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+    width: 20rem;
+    border: 1px solid blue;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 20rem;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    height: 30rem;
+    margin: 0 auto;
+    border: 8px solid #3a5796;
+  }
+
+  .right{
+    text-align: right;
+    margin: 0;
+  }
+  
+  .left{
+    text-align: left;
+    margin: 0;
+  } 
+}
 
 @media (max-width:768px) { /*screen size smaller than 768px  */
   .hero-image{
@@ -234,29 +301,306 @@ hr.solid2 {
     width: 80%;
     padding: 20px;
   }
+
+  .card{
+    font-size: 12px;
+  }
+
+  .proclamation {
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+    width: 15rem;
+    border: 1px solid blue;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 15rem;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    height: 25rem;
+    margin: 0 auto;
+    border: 8px solid #3a5796;
+  }
+
+  .card-group, .card {
+    display: block !important;
+    margin: 0 auto !important;
+    margin-bottom: 10px !important;
+  }
+
+  .right{
+    text-align: right;
+    margin-right: 2rem;
+  }
+  
+  .left{
+    text-align: left;
+    margin-left: 2rem;
+  }
+
+  .panelPoints{
+    text-align: center;
+    background-color: #3a5796;
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+    width: 90%;
+    padding: 10px;
+  }
+  
 } 
 
 
 @media (max-width:425px) { /*screen size smaller than 425px  */
-  .hero-image{
-    height: 25rem;
+  .centered{
+    font-size: 9px;
+    width: 75%;
+    padding: 15px;
+  }
+
+  .fred{
+    max-width: 7rem;
+  }
+
+  .ian{
+    max-width: 8rem;
+  }
+
+  .contain{
+    max-width: 50rem;
+  }
+
+  .proclamation {
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+    width: 15rem;
+    border: 1px solid blue;
   }
   
-  .centered{
-    font-size: 10px;
-    width: 75%;
-    padding: 20px;
+  .image {
+    opacity: 1;
+    display: block;
+    width: 15rem;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    height: 25rem;
+    margin: 0 auto;
+    border: 8px solid #3a5796;
+  }
+
+  .right{
+    text-align: right;
+    margin: 0;
+  }
+
+  .left{
+    text-align: left;
+    margin: 0;
+  }
+
+  .arbitration{
+    width: 10rem;
+  }
+
+  .gif{
+    width: 15rem;
+  }
+
+  .hero-image{
+    height: 20rem;
+    width: 100%;
+    z-index: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .centered {
+    padding: 10px;
+  }
+
+  #about, #arbitration, #vp, .container, .text{
+    font-size: 13px;
+  }
+
+  .card{
+    margin: 0 auto;
+  }
+
+  .gif{
+    height: 12vh;
+  }
+
+  .panelPoints{
+    text-align: center;
+    background-color: #3a5796;
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+    width: 85%;
+    padding: 10px;
   }
 } 
 
 @media (max-width:375px) { /*screen size smaller than 375px  */
-  .hero-image{
-    height: 25rem;
-  }
   
   .centered{
     font-size: 9px;
     width: 75%;
     padding: 15px;
+  }
+
+  .fred{
+    max-width: 6rem;
+  }
+
+  .ian{
+    max-width: 8rem;
+  }
+
+  .contain{
+    max-width: 50rem;
+  }
+
+  .proclamation {
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+    width: 15rem;
+    border: 1px solid blue;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 15rem;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    height: 25rem;
+    margin: 0 auto;
+    border: 8px solid #3a5796;
+  }
+
+  .right{
+    text-align: right;
+    margin: 0;
+  }
+
+  .left{
+    text-align: left;
+    margin: 0;
+  }
+
+  .arbitration{
+    width: 10rem;
+  }
+
+  .gif{
+    height: 10vh;
+  }
+
+  .hero-image{
+    height: 20rem;
+    width: 100%;
+    z-index: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .centered {
+    padding: 10px;
+  }
+
+  #about, #arbitration, #vp, .container, .text{
+    font-size: 12px;
+  }
+
+  .card{
+    margin: 0 auto;
+  }
+
+  .gif{
+    height: 12vh;
+  }
+
+} 
+
+@media (max-width:320px) { /*screen size smaller than 320px  */
+  
+  .centered{
+    font-size: 9px;
+    width: 75%;
+    padding: 15px;
+  }
+
+  .fred{
+    max-width: 5rem;
+  }
+
+  .ian{
+    max-width: 7rem;
+  }
+
+  .contain{
+    max-width: 20rem;
+  }
+
+  .proclamation {
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+    width: 10rem;
+    border: 1px solid blue;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 10rem;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    height: 15rem;
+    margin: 0 auto;
+    border: 8px solid #3a5796;
+  }
+
+  .right{
+    text-align: right;
+    margin: 0;
+  }
+
+  .left{
+    text-align: left;
+    margin: 0;
+  }
+
+  .arbitration{
+    width: 10rem;
+  }
+
+  .gif{
+    height: 10vh;
+  }
+
+  .hero-image{
+    height: 20rem;
+    width: 100%;
+    z-index: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .centered {
+    padding: 10px;
+  }
+
+  #about, #arbitration, #vp, .container, .text{
+    font-size: 12px;
   }
 } 
