@@ -239,12 +239,15 @@ hr.solid2 {
   display: block;
 }
 
-.panel{
-  margin: auto;
-  height: 100vh;
-  width: 100%;
+#scaled-frame {
+  width: 100vw;
+  height: 90vh;
+  border: 0px;
 }
 
+.hide{
+  display: none;
+}
 
 
 @media (max-width:1440px) { /*screen size smaller than 1440px  */
@@ -297,6 +300,10 @@ hr.solid2 {
     margin-top: 2rem;
   }
 
+  .hide{
+    display: none;
+  }
+
 } 
 
 @media (max-width:1024px) { /*screen size smaller than 1024px  */
@@ -347,6 +354,10 @@ hr.solid2 {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: 1rem;
+  }
+
+  .hide{
+    display: none;
   }
   
 }
@@ -415,6 +426,10 @@ hr.solid2 {
     font-size: 15px;
     width: 90%;
     padding: 40px;
+  }
+
+  .hide{
+    display: inline;
   }
   
 } 
@@ -516,6 +531,10 @@ hr.solid2 {
     width: 100%;
     padding: 40px;
   }
+
+  .hide{
+    display: inline;
+  }
   
 } 
 
@@ -607,6 +626,10 @@ hr.solid2 {
     padding: 40px;
   }
 
+  .hide{
+    display: inline;
+  }
+
 } 
 
 @media (max-width:320px) { /*screen size smaller than 320px  */
@@ -687,6 +710,10 @@ hr.solid2 {
     font-size: 9px;
     width: 90%;
     padding: 40px;
+  }
+
+  .hide{
+    display: inline;
   }
 
 } 
