@@ -3,18 +3,32 @@ import arbpdf from '../components/arb.pdf';
 import '.././App.css';
 import {Link} from "react-router-dom";
 
+let screen = window.screen.availWidth;
+let mobile = false;
+
+function componentDidMount(){
+    if(screen < 960){
+        mobile = true;
+        return(
+            <iframe className='panel' src={`${arbpdf}#view=fitH`} title="arbitration pdf" height="100vh" width="100%" />
+            // <iframe width="300" height="200" src={"https://onedrive.live.com/embed?cid=BE35587733C974EE&resid=BE35587733C974EE%2145365&authkey=ALizqDImQYcmoMg&em=2"} ></iframe>
+        )
+    }
+    else if(screen > 960){
+        mobile = false;
+        return(
+            <iframe className='panel' src={`${arbpdf}#view=fitH`} title="arbitration pdf" height="100vh" width="100%" />
+        )
+    }
+}
+
 function pdfPage() {
+
+    
     return (
         <div>
-            {/* <Link to="/" className='homeButton'>Go Back</Link> */}
-            <div>
-                <object data={arbpdf} className='panel' type="application/pdf" width="100%" height="800px"> 
-                <p>It appears you don't have a PDF plugin for this browser.
-                No biggie... you can <a href={arbpdf}>click here to
-                download the PDF file.</a></p>  
-                </object>
 
-            </div> 
+            {componentDidMount()}
                  
         </div>
     )

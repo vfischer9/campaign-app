@@ -95,11 +95,11 @@ hr.solid2 {
   border-radius: 10rem;
 }
 
-/* .panel{
+.panel{
   margin: auto;
   height: 100vh;
   width: 100%;
-} */
+}
 
 .panelPoints{
   text-align: center;
@@ -238,6 +238,13 @@ hr.solid2 {
   margin: 0 auto;
   display: block;
 }
+
+.panel{
+  margin: auto;
+  height: 100vh;
+  width: 100%;
+}
+
 
 
 @media (max-width:1440px) { /*screen size smaller than 1440px  */
