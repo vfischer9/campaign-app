@@ -10,7 +10,7 @@ function componentDidMount(){
     if(screen < 960){
         mobile = true;
         return(
-            <iframe className='panel' src={`${arbpdf}#view=fitH`} title="arbitration pdf" height="100vh" width="100%" />
+            <iframe className='panel' src={`${"https://onedrive.live.com/embed?cid=BE35587733C974EE&resid=BE35587733C974EE%2145365&authkey=ALizqDImQYcmoMg&em=2"}#view=fitH`} title="arbitration pdf" height="100vh" width="100%" />
             // <iframe width="300" height="200" src={"https://onedrive.live.com/embed?cid=BE35587733C974EE&resid=BE35587733C974EE%2145365&authkey=ALizqDImQYcmoMg&em=2"} ></iframe>
         )
     }
