@@ -3,6 +3,8 @@
 American flag banner: https://unsplash.com/photos/QsX23A3NgMQ
 Logo: canva.com
 Tab Icon: https://www.flaticon.com/premium-icon/flag_3258425?term=star%20america&page=1&position=11&page=1&position=11&related_id=3258425&origin=search
+loading gif: https://loading.io/
+arrow: https://www.flaticon.com/premium-icon/up-arrow_4103148?term=up%20arrow&page=3&position=55&page=3&position=55&related_id=4103148&origin=search
 
 # Getting Started with Create React App
 

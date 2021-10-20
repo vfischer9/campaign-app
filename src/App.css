@@ -239,7 +239,7 @@ hr.solid2 {
   display: block;
 }
 
-#scaled-frame {
+.scaled-frame {
   width: 100vw;
   height: 90vh;
   border: 0px;
@@ -247,6 +247,24 @@ hr.solid2 {
 
 .hide{
   display: none;
+}
+
+#iframe-loading { 
+  background: url(../src/images/loading.gif) center center no-repeat; 
+}
+
+.scroll-to-top{
+  position: fixed;
+  top: 20px;
+  left: 15px;
+}
+
+.scroll-to-top:hover{
+  cursor: pointer;
+}
+
+.upImg{
+  height: 5rem;
 }
 
 
@@ -429,7 +447,26 @@ hr.solid2 {
   }
 
   .hide{
-    display: inline;
+    display: block;
+    position: fixed;
+    right: 0;
+    left: 0;
+    margin: 0;
+    margin-top: 1rem;
+    text-align:center;
+    font-size: 10px;
+  }
+
+  .hide2{
+    background-color: white;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    text-align:center;
+    font-size: 10px;
   }
   
 } 
@@ -535,6 +572,16 @@ hr.solid2 {
   .hide{
     display: inline;
   }
+
+  .scroll-to-top{
+    position: fixed;
+    top: 20px;
+    left: 8px;
+  }
+
+  .upImg{
+    height: 3rem;
+  }
   
 } 
 
@@ -630,6 +677,16 @@ hr.solid2 {
     display: inline;
   }
 
+  .scroll-to-top{
+    position: fixed;
+    top: 20px;
+    left: 4px;
+  }
+
+  .upImg{
+    height: 3rem;
+  }
+
 } 
 
 @media (max-width:320px) { /*screen size smaller than 320px  */
@@ -714,6 +771,16 @@ hr.solid2 {
 
   .hide{
     display: inline;
+  }
+
+  .scroll-to-top{
+    position: fixed;
+    top: 25px;
+    left: 8px;
+  }
+
+  .upImg{
+    height: 2rem;
   }
 
 } 

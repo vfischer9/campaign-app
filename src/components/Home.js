@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Nav, Navbar, Container, Card, CardGroup } from 'react-bootstrap';
 import logo from '../images/apwu.png';
 import hero from '../images/american-flag.jpg';
@@ -13,22 +13,50 @@ import arbitration from '../images/arbitration.jpeg';
 import {Link} from "react-router-dom";
 import campaignGif from '../images/campaign.gif';
 import 'animate.css';
+import up from '../images/up.png'
+
 
 function Home() {
 
+    const [isVisible, setIsVisible] = useState(false);
+
+    // Top: 0 takes us all the way back to the top of the page
+  // Behavior: smooth keeps it smooth!
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
+  useEffect(() => {
+    // Button is displayed after scrolling for 500 pixels
+    const toggleVisibility = () => {
+      if (window.pageYOffset > 500) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", toggleVisibility);
+
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
+
     return (
-        <div id='home'>
+        <div id='home' onload="$('.iframe-loading').css('background-image', 'none');" >
+            
             <Navbar collapseOnSelect expand="lg" variant="dark" className='navb'>
                 <Container>
-                    <Navbar.Brand href="#home">Leadership Team 2022</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
                         </Nav>
                         <img className='logo center' src = {logo} alt='logo'></img>
-                        <Nav>
+                        {/* <Nav>
                             <Nav.Link eventKey={2} href="#media">Media</Nav.Link>
-                        </Nav>
+                        </Nav> */}
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
@@ -51,6 +79,14 @@ function Home() {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+
+            <div className="scroll-to-top">
+                {isVisible && (
+                    <div onClick={scrollToTop}>
+                    <img className='upImg' src={up} alt='Up Arrow'></img>
+                    </div>
+                )}
+                </div>
 
             <div class="contain">
                 <img className="hero-image" src={hero}></img>
@@ -347,6 +383,7 @@ function Home() {
             </div>
 
             <img src={campaignGif} className='gif' alt='campaign gif'></img>
+
 
     
     <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
