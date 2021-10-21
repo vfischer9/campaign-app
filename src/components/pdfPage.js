@@ -16,7 +16,8 @@ function componentDidMount(){
     else if(screen > 960){
         mobile = false;
         return(
-            <iframe className='panel' src={`${arbpdf}#zoom=fitH`} title="arbitration pdf" height="100%" width="100%" onload="$('.iframe-loading').css('background-image', 'none');"/>
+            <object className='panel' data={arbpdf} title="arbitration pdf" height="100%" width="100%" type='application/pdf' onload="$('.iframe-loading').css('background-image', 'none');"> </object>
+            // <iframe className='panel' src={`${arbpdf}#zoom=fitH`} title="arbitration pdf" height="100%" width="100%" onload="$('.iframe-loading').css('background-image', 'none');"/>
         )
     }
 

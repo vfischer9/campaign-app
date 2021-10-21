@@ -5,13 +5,21 @@
 }
 
 .body{
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
 .App{
   font-family: 'Raleway', sans-serif;
   /* font-family: 'Poppins', sans-serif; */
+}
+
+.navText{
+  color: white;
+  animation: tada;
+  animation-duration: 3s; /* don't forget to set a duration! */
+  animation-iteration-count: infinite;
+  font-family: 'Shrikhand', cursive;
 }
 
 .navb2{
@@ -54,7 +62,7 @@ hr.solid2 {
 }
 
 .hero-image{
-  height: 40rem;
+  height: 30rem;
   width: 100%;
   z-index: 0;
   background-position: center;
@@ -67,10 +75,10 @@ hr.solid2 {
   color: #63B4CB;
 }
 
-.topText{
-  animation: zoomInDown; /*  referring directly to the animation's @keyframe declaration */
+/* .topText{
+  animation: zoomInDown; 
   animation-duration: 2s;
-}
+} */
 
 #about, #arbitration, #vp{
   text-align: center;
@@ -78,20 +86,22 @@ hr.solid2 {
   color: white;
   margin: auto;
   margin-top: 50px;
-  width: 70%;
+  width: 80%;
   padding: 10px;
 }
 
 .endorsement{
   font-size: 18px;
-  font-style: italic;
   text-align: center;
   background-color: #3a5796;
   color: white;
   margin: auto;
   margin-top: 50px;
   width: 70%;
-  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-radius: 10rem;
 }
 
@@ -165,7 +175,6 @@ hr.solid2 {
   margin-top: 30px;
   position: relative;
   width: 30rem;
-  border: 1px solid blue;
 }
 
 .image {
@@ -212,6 +221,7 @@ hr.solid2 {
 
 .arbitration{
   width: 30rem;
+  border: 2px solid black;
 }
 
 .right{
@@ -236,6 +246,7 @@ hr.solid2 {
 .gif{
   height: 35vh;
   margin: 0 auto;
+  margin-top: 50px;
   display: block;
 }
 
@@ -321,6 +332,13 @@ hr.solid2 {
   .hide{
     display: none;
   }
+
+} 
+
+@media (max-width:1080px) { /*screen size smaller than 1080px  */
+.gif{
+  width: 45rem;
+}
 
 } 
 
@@ -468,6 +486,18 @@ hr.solid2 {
     text-align:center;
     font-size: 10px;
   }
+
+  .logo {
+    width: 45%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .navb{
+    height: 120px;
+  }
   
 } 
 
@@ -582,6 +612,18 @@ hr.solid2 {
   .upImg{
     height: 3rem;
   }
+
+  .logo {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .navb{
+    height: 100px;
+  }
   
 } 
 
@@ -687,6 +729,18 @@ hr.solid2 {
     height: 3rem;
   }
 
+  .logo {
+    width: 60%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .navb{
+    height: 90px;
+  }
+
 } 
 
 @media (max-width:320px) { /*screen size smaller than 320px  */
@@ -781,6 +835,18 @@ hr.solid2 {
 
   .upImg{
     height: 2rem;
+  }
+
+  .logo {
+    width: 60%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .navb{
+    height: 70px;
   }
 
 } 

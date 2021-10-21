@@ -49,15 +49,9 @@ function Home() {
             
             <Navbar collapseOnSelect expand="lg" variant="dark" className='navb'>
                 <Container>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto">
-                        </Nav>
+                        <p className='navText'>Fred Fischer For President!</p>
                         <img className='logo center' src = {logo} alt='logo'></img>
-                        {/* <Nav>
-                            <Nav.Link eventKey={2} href="#media">Media</Nav.Link>
-                        </Nav> */}
-                    </Navbar.Collapse>
+                        <p className='navText'>Ian Fisher For Vice President!</p>
                 </Container>
             </Navbar>
 
@@ -67,6 +61,7 @@ function Home() {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="m-auto">
                             <Nav.Link className='navb2' style={{color:"#3a5796"}} href="#about">ABOUT FRED</Nav.Link>
+                            <Nav.Link className='navb2' style={{color:"#3a5796"}} href="#endorsements">ENDORSEMENTS</Nav.Link>
                             <Nav.Link className='navb2' style={{color:"#3a5796"}} href="#vp">ABOUT IAN</Nav.Link>
                             <Nav.Link className='navb2' style={{color:"#3a5796"}} href="#arbitration">GHIRALDI SETTLEMENT</Nav.Link>
                             {/* <NavDropdown className='navb2' style={{color:"#3a5796"}} title={
@@ -96,11 +91,7 @@ function Home() {
                     experienced leadership that is both dedicated and committed to all our members and crafts.
                     As I have served the Local as shop steward, clerk craft director, and Local President since 2004,
                     I believe now is the time to not only tell the members who has betrayed them, but for the first
-                    time, I am going to provide the <u><b>proof</b></u> to you that you deserve. At the close of my 2 terms in 2009, the Local Union had many grievances still in the system
-                    pending arbitration, for all crafts, clerks, maintenance and motor vehicle services. Most notable
-                    was a non-compliance grievance in the VMF which had to do with staffing, towing and
-                    monetary compensation for the VMF. Gerry Ghiraldi traded all these grievances. Why you ask? For his own personal gain. I am providing the settlement he signed as well as the arbitration that went on in 2011.
-                    " -Fred Fischer
+                    time, I am going to provide the <u><b>proof</b></u> to you that you deserve" -Fred Fischer
                     </p>
                 </div>
             </div>
@@ -115,31 +106,38 @@ function Home() {
                 <div className='body'>
                 <p>
                     <p><i>
-                    "I am running for Local President along with Ian Fisher for Executive Vice President. I have almost
-                    20 years experience as Union rep for our local, most of those years as the Local President. Here is just
-                    a small list of my many accomplishments, from 12 years ago, and I've served an additional 2 terms as President
-                    since then." - Fred Fischer 
+                    "Your grievances, under my leadership, are always considered important, safe, and never
+                    used as a bargaining chip to make my personal life better. As always, I would like to 
+                    thank you for your support. It has been an honor to serve you. I look forward to the 
+                    future, and with the right people in office, our future is indeed bright." -Fred Fischer
                     </i></p>
 
-                    <p className='bullets'>Eileen George and Gerald Ghiraldi are running together- zero experience and unethical deals are
+                    <p className='bullets'>
+                        I am running for Local President along with Ian Fisher for Executive Vice President. I believe 
+                        sometimes change is needed, but I also recognize that it should be change for the better if 
+                        someone is not doing a good job. It should never be for personal reasons, which is a south 
+                        shore annex rerun over and over again.
+                        <br /> <br />
+                        Eileen George and Gerald Ghiraldi are running together- zero experience and unethical deals are
                         not in your best interest. Eileen George currently struggles at the base shop steward level, and has limited
-                        experience outside of the basic step 1 grievance. Fred, however, has 20 years union experience, most of which as Local
-                        President. With 2022 quickly approaching, we will face more challenges as our contract is expired, our local agreement 
+                        experience outside of the basic step 1 grievance, and Gerry has squashed grievances 
+                        for his own personal gain, which is <i>highly </i> unethical.
+                        At the close of my 2 terms in 2009, the Local Union had many grievances still in the system
+                        pending arbitration, for all crafts, clerks, maintenance and motor vehicle services. Most notable
+                        was a non-compliance grievance in the VMF which had to do with staffing, towing and
+                        monetary compensation for the VMF. Gerry Ghiraldi traded all these grievances. 
+                        Why you ask? For his own personal gain. 
+                        I am providing the settlement he signed as well as the arbitration that went on in 2011. 
+                        </p>
+                        <p className='bullets'>
+                        With 2022 quickly approaching, we will face more challenges as our contract is expired, our local agreement 
                         will need to be negotiated if management chooses. We have a new Postmaster. We have new officers on our executive
                         board. As a Local President, there is no substitute for experience. There is training available for stewards, treasurers,
                         craft specific training, but there is nothing to prepare someone for the position of president and leadership. 
-                        <br /> <br />
-                        "I believe sometimes change is needed, but I also recognize that it should be change for the better if someone is not doing 
-                        a good job. It should never be for personal reasons, which is a south shore annex rerun over and over again." 
-                        </p>
-                        <p className='bullets'>
-                        Eileen has zero experience, and Gerry has squashed grievances for his own personal gain, which is <i>highly </i> unethical.
-                        If memory serves correct, John Braccia was elected President, not Gerry. Yet he still settled grievances which were pending arbitration 
-                        and signed the settlement as Local President. 
                         <br /><br />
-                        "Your grievances, under my leadership, are always considered important, safe, and never
-                        used as a bargaining chip to make my personal life better. As always, I would like to thank you for your support. It has been an honor
-                        to serve you. I look forward to the future, and with the right people in office, our future is indeed bright." -Fred Fischer
+                        I have almost 20 years experience as Union rep for our local, most of those years as the Local President. Here is just
+                        a small list of my many accomplishments, from 12 years ago, and I've served an additional two terms as President
+                        since then.
                         </p>
 
                         <hr className='solid2'></hr>
@@ -182,8 +180,9 @@ function Home() {
                 <div className='card-group'>
                 <div style={{ width: '18rem' }} className='card'>
                         <Card.Img variant="top" src={training} alt="training certificate" className='award' />
-                        <Card.Body>
+                        <Card.Body className='cardBody'>
                             <Card.Title className='title'>Basic Arbitration Training Certificate</Card.Title>
+                            <hr class="solid2"></hr>
                             <Card.Text>
                             Fred Fischer - 2009<br />
                             American Postal Workers Union, AFL-CIO<br /> <br />
@@ -195,8 +194,9 @@ function Home() {
                
                     <div style={{ width: '18rem' }} className='card'>
                         <Card.Img variant="top" src={labor} alt="labor leader certificate" className='award' />
-                        <Card.Body>
+                        <Card.Body className='cardBody'>
                             <Card.Title className='title'>Certificate of Recognition</Card.Title>
+                            <hr class="solid2"></hr>
                             <Card.Text>
                             Fred Fischer - April 30, 2009<br />
                             Bob Parker Labor Leader Award Recipient<br /> <br />
@@ -211,8 +211,9 @@ function Home() {
 
                     <div style={{ width: '18rem' }} className='card'>
                         <Card.Img variant="top" src={service} alt="service certificate" className='award' />
-                        <Card.Body>
+                        <Card.Body className='cardBody'>
                             <Card.Title className='title'>Special Congressional Recognition</Card.Title>
+                            <hr class="solid2"></hr>
                             <Card.Text>
                                 Fred Fischer - April 30, 2009<br />
                                 Member of Congress <br /><br />
@@ -231,7 +232,19 @@ function Home() {
                         </div>
             </div>
 
-            <div className='endorsement'>
+            <hr class="solid"></hr>
+
+            <div className='endorsement' id='endorsements'>
+            <h3 className='title'>ENDORSEMENTS</h3>
+            <hr class="solid2"></hr>
+            <p><i>
+            "In my time in the post office I was Vice President, Clerk Craft Director, and Shop 
+            Steward for over 25 years- nothing beats experience. If I had a vote in this year's 
+            election, it would be Fred Fischer for President" 
+            -Tom Ferrigno, (Retired) Former Vice President & Clerk Craft Director
+            </i></p>
+            
+            <p><i>
             "With the Postal Service being attacked on all fronts, from Washington to the local level, the 
             Staten Island APWU Local needs someone that shows the leadership, knowledge and experience to 
             handle the challenges facing the membership ahead. I know Fred Fischer is the person for such 
@@ -240,8 +253,8 @@ function Home() {
             for 12 years and can attest that Fred Fischer has the knowledge, experience and leadership 
             the other candidate lacks to continue as President of Local 231. Vote for Fred Fischer in 
             this election year"
-            -Bruce Marshall
-
+            -Bruce Marshall, (Retired) Former Maintenance Craft Director
+            </i></p>
             </div>
 
             <hr class="solid"></hr>
@@ -375,14 +388,15 @@ function Home() {
                         <p className='numbers'>15. Page 35, line 5, The Arbitrator notes that at the hearing before him, the union additionally
                         sought forty (40) hours of pay for each position provided pursuant to the April 16, 2008 pre-arb settlement. This monetary remedy sought by the union, conspicuously left out of the January
                         12, 2010 imposed settlement, is rejected herein.</p>
-                        <Link to="/pdf" target='_blank'><button> View the entire Arbitration Panel</button></Link>
+                        <Link to="/pdf" target='_blank'><button>View the entire Arbitration Panel</button></Link>
                     </div>
                     
                 </div>
 
             </div>
 
-            <img src={campaignGif} className='gif' alt='campaign gif'></img>
+            <img 
+            src={campaignGif} className='gif' alt='campaign gif'></img>
 
 
     
