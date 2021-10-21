@@ -15,6 +15,7 @@
 }
 
 .navText{
+  font-size: 24px;
   color: white;
   animation: tada;
   animation-duration: 3s; /* don't forget to set a duration! */
@@ -395,6 +396,15 @@ hr.solid2 {
   .hide{
     display: none;
   }
+
+  .navText{
+    font-size: 20px;
+    color: white;
+    animation: tada;
+    animation-duration: 3s; /* don't forget to set a duration! */
+    animation-iteration-count: infinite;
+    font-family: 'Shrikhand', cursive;
+  }
   
 }
 
@@ -497,6 +507,15 @@ hr.solid2 {
 
   .navb{
     height: 120px;
+  }
+
+  .navText{
+    font-size: 16px;
+    color: white;
+    animation: tada;
+    animation-duration: 3s; /* don't forget to set a duration! */
+    animation-iteration-count: infinite;
+    font-family: 'Shrikhand', cursive;
   }
   
 } 
@@ -624,6 +643,15 @@ hr.solid2 {
   .navb{
     height: 100px;
   }
+
+  .navText{
+    font-size: 8.5px;
+    color: white;
+    animation: tada;
+    animation-duration: 3s; /* don't forget to set a duration! */
+    animation-iteration-count: infinite;
+    font-family: 'Shrikhand', cursive;
+  }
   
 } 
 
@@ -741,6 +769,15 @@ hr.solid2 {
     height: 90px;
   }
 
+  .navText{
+    font-size: 7.5px;
+    color: white;
+    animation: tada;
+    animation-duration: 3s; /* don't forget to set a duration! */
+    animation-iteration-count: infinite;
+    font-family: 'Shrikhand', cursive;
+  }
+
 } 
 
 @media (max-width:320px) { /*screen size smaller than 320px  */
@@ -847,6 +884,15 @@ hr.solid2 {
 
   .navb{
     height: 70px;
+  }
+
+  .navText{
+    font-size: 6px;
+    color: white;
+    animation: tada;
+    animation-duration: 3s; /* don't forget to set a duration! */
+    animation-iteration-count: infinite;
+    font-family: 'Shrikhand', cursive;
   }
 
 } 
